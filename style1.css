@@ -17,8 +17,8 @@ header {
 
 nav {
     display: flex;
-    justify-content: flex-end; 
-    padding-right: 50px; 
+    justify-content: flex-end;
+    padding-right: 50px;
 }
 
 nav ul {
@@ -33,19 +33,19 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 17.6px; 
+    font-size: 17.6px;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #00bcd4; 
+    color: #00bcd4;
 }
 
 .hero-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 100px; 
+    padding: 100px;
     background-color: #333;
     color: #fff;
     height: 100vh;
@@ -62,19 +62,19 @@ nav ul li a:hover {
 }
 
 .left-content h1 {
-    font-size: 56px; 
+    font-size: 56px;
     margin-bottom: 10px;
     font-weight: bold;
 }
 
 .profession {
-    font-size: 24px; 
-    color: #00bcd4; 
+    font-size: 24px;
+    color: #00bcd4;
     margin-bottom: 20px;
 }
 
 .welcome-note {
-    font-size: 19.2px; 
+    font-size: 19.2px;
     line-height: 1.8;
 }
 
@@ -89,7 +89,7 @@ nav ul li a:hover {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    border: 5px solid #00bcd4; 
+    border: 5px solid #00bcd4;
     animation: floatImage 5s infinite;
 }
 
@@ -98,9 +98,119 @@ nav ul li a:hover {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-40px);
+        transform: translateY(-30px);
     }
 }
+
+.section {
+    padding: 80px 0;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Media Queries for Responsive Design */
+
+/* For tablets and smaller screens */
+@media (max-width: 1024px) {
+    .hero-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .left-content, .right-content {
+        max-width: 100%;
+    }
+
+    .left-content h1 {
+        font-size: 48px;
+    }
+
+    .profession {
+        font-size: 22px;
+    }
+
+    .welcome-note {
+        font-size: 18px;
+    }
+
+    .profile-img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 20px;
+    }
+
+    .left-content h1 {
+        font-size: 40px;
+    }
+
+    .profession {
+        font-size: 20px;
+    }
+
+    .welcome-note {
+        font-size: 16px;
+    }
+
+    .profile-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+    .hero-section {
+        padding: 40px 10px;
+    }
+
+    .left-content h1 {
+        font-size: 32px;
+    }
+
+    .profession {
+        font-size: 18px;
+    }
+
+    .welcome-note {
+        font-size: 14px;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
+
 .section {
     padding: 80px 0; 
 }
